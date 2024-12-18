@@ -16,10 +16,5 @@ namespace Phone_Store
         {
             InitializeComponent();
         }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
