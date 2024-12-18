@@ -1,14 +1,14 @@
 ﻿namespace Phone_Store
 {
-    partial class Login
+    partial class ResetP
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +23,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -49,11 +49,11 @@
             // 
             label1.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(0, 153, 153);
-            label1.Location = new Point(154, 75);
+            label1.Location = new Point(157, 75);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(180, 80);
-            label1.TabIndex = 13;
+            label1.TabIndex = 10;
             label1.Text = "Welcome";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -95,7 +95,6 @@
             loginbtn.TabIndex = 4;
             loginbtn.Text = "LOGIN";
             loginbtn.UseVisualStyleBackColor = false;
-            loginbtn.Click += loginbtn_Click;
             // 
             // panel1
             // 
@@ -134,7 +133,6 @@
             inkForgotPass.TabIndex = 3;
             inkForgotPass.TabStop = true;
             inkForgotPass.Text = "Forgotten password?";
-            inkForgotPass.LinkClicked += inkForgotPass_LinkClicked_1;
             // 
             // groupBox1
             // 
@@ -144,10 +142,10 @@
             groupBox1.Controls.Add(loginbtn);
             groupBox1.Controls.Add(panel1);
             groupBox1.Controls.Add(panel2);
-            groupBox1.Location = new Point(3, 190);
+            groupBox1.Location = new Point(6, 190);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(493, 436);
-            groupBox1.TabIndex = 14;
+            groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             // 
             // label4
@@ -173,7 +171,7 @@
             button1.Text = "Create new account";
             button1.UseVisualStyleBackColor = false;
             // 
-            // Login
+            // ResetP
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -183,9 +181,8 @@
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Login";
+            Name = "ResetP";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);

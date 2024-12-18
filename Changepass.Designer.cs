@@ -1,14 +1,14 @@
 ﻿namespace Phone_Store
 {
-    partial class Login
+    partial class Changepass
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +23,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -95,7 +95,6 @@
             loginbtn.TabIndex = 4;
             loginbtn.Text = "LOGIN";
             loginbtn.UseVisualStyleBackColor = false;
-            loginbtn.Click += loginbtn_Click;
             // 
             // panel1
             // 
@@ -134,7 +133,6 @@
             inkForgotPass.TabIndex = 3;
             inkForgotPass.TabStop = true;
             inkForgotPass.Text = "Forgotten password?";
-            inkForgotPass.LinkClicked += inkForgotPass_LinkClicked_1;
             // 
             // groupBox1
             // 
@@ -173,7 +171,7 @@
             button1.Text = "Create new account";
             button1.UseVisualStyleBackColor = false;
             // 
-            // Login
+            // Changepass
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -183,9 +181,8 @@
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Login";
+            Name = "Changepass";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);

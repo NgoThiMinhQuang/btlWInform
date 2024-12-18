@@ -19,3 +19,29 @@ C:\Users\Admin\source\repos\BTL\winform\New folder\Phone Store\obj\Debug\net8.0-
 C:\Users\Admin\source\repos\BTL\winform\New folder\Phone Store\obj\Debug\net8.0-windows\Phone Store.pdb
 C:\Users\Admin\source\repos\BTL\winform\New folder\Phone Store\obj\Debug\net8.0-windows\Phone Store.genruntimeconfig.cache
 C:\Users\Admin\source\repos\BTL\winform\New folder\Phone Store\obj\Debug\net8.0-windows\ref\Phone Store.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Phone Store.exe
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Phone Store.deps.json
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Phone Store.runtimeconfig.json
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Phone Store.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Phone Store.pdb
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone_Store.Login.resources
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone_Store.Register.resources
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.AssemblyInfo.cs
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.sourcelink.json
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone St.B371E46D.Up2Date
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\refint\Phone Store.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.pdb
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone Store.genruntimeconfig.cache
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\ref\Phone Store.dll
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone_Store.Changepass.resources
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone_Store.Properties.Resources.resources
+C:\Users\Admin\source\repos\BTL\winform\PhoneStore_M\Phone Store\obj\Debug\net8.0-windows\Phone_Store.ResetP.resources
