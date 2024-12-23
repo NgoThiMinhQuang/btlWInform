@@ -30,19 +30,42 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbUsername = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.loginbtn = new System.Windows.Forms.Button();
+            this.inkForgotPass = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.inkForgotPass = new System.Windows.Forms.LinkLabel();
-            this.loginbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txbUsername = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cbbRole = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Createbtn = new System.Windows.Forms.Button();
+            this.Loginbtnn = new System.Windows.Forms.Button();
+            this.inkForgot = new System.Windows.Forms.LinkLabel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Showpassword = new System.Windows.Forms.PictureBox();
+            this.tbxPass = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txbUser = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Showpassword)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -52,12 +75,13 @@
             this.label1.Location = new System.Drawing.Point(166, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 75);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 98;
             this.label1.Text = "Welcome";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.loginbtn);
@@ -66,41 +90,86 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 190);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(481, 436);
+            this.groupBox1.Size = new System.Drawing.Size(481, 519);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.Controls.Add(this.txbUsername);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(6, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 77);
-            this.panel1.TabIndex = 0;
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(6, 28);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(469, 77);
+            this.panel3.TabIndex = 3;
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "UserName ";
+            this.textBox1.Location = new System.Drawing.Point(88, 35);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(306, 34);
+            this.textBox1.TabIndex = 1;
             // 
-            // txbUsername
+            // label5
             // 
-            this.txbUsername.Location = new System.Drawing.Point(88, 35);
-            this.txbUsername.Multiline = true;
-            this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(306, 34);
-            this.txbUsername.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(88, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 23);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(228, 399);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 28);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "OR";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(183)))), ((int)(((byte)(42)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(157, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 45);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Create new account";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // loginbtn
+            // 
+            this.loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(230)))));
+            this.loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginbtn.ForeColor = System.Drawing.Color.White;
+            this.loginbtn.Location = new System.Drawing.Point(100, 307);
+            this.loginbtn.Name = "loginbtn";
+            this.loginbtn.Size = new System.Drawing.Size(306, 72);
+            this.loginbtn.TabIndex = 3;
+            this.loginbtn.Text = "LOGIN";
+            this.loginbtn.UseVisualStyleBackColor = false;
+            // 
+            // inkForgotPass
+            // 
+            this.inkForgotPass.AutoSize = true;
+            this.inkForgotPass.Location = new System.Drawing.Point(100, 271);
+            this.inkForgotPass.Name = "inkForgotPass";
+            this.inkForgotPass.Size = new System.Drawing.Size(178, 23);
+            this.inkForgotPass.TabIndex = 2;
+            this.inkForgotPass.TabStop = true;
+            this.inkForgotPass.Text = "Forgotten password?";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txbPass);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(6, 111);
+            this.panel2.Location = new System.Drawing.Point(6, 182);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(469, 77);
             this.panel2.TabIndex = 2;
@@ -122,69 +191,211 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Password";
             // 
-            // inkForgotPass
+            // panel1
             // 
-            this.inkForgotPass.AutoSize = true;
-            this.inkForgotPass.Location = new System.Drawing.Point(94, 200);
-            this.inkForgotPass.Name = "inkForgotPass";
-            this.inkForgotPass.Size = new System.Drawing.Size(178, 23);
-            this.inkForgotPass.TabIndex = 2;
-            this.inkForgotPass.TabStop = true;
-            this.inkForgotPass.Text = "Forgotten password?";
+            this.panel1.Controls.Add(this.txbUsername);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(6, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(469, 77);
+            this.panel1.TabIndex = 0;
             // 
-            // loginbtn
+            // txbUsername
             // 
-            this.loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(230)))));
-            this.loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginbtn.ForeColor = System.Drawing.Color.White;
-            this.loginbtn.Location = new System.Drawing.Point(94, 236);
-            this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(306, 72);
-            this.loginbtn.TabIndex = 3;
-            this.loginbtn.Text = "LOGIN";
-            this.loginbtn.UseVisualStyleBackColor = false;
+            this.txbUsername.Location = new System.Drawing.Point(88, 35);
+            this.txbUsername.Multiline = true;
+            this.txbUsername.Name = "txbUsername";
+            this.txbUsername.Size = new System.Drawing.Size(306, 34);
+            this.txbUsername.TabIndex = 1;
             // 
-            // button1
+            // label2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(183)))), ((int)(((byte)(42)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(151, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 45);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Create new account";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(88, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "UserName ";
             // 
-            // label4
+            // groupBox2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(222, 328);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 28);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "OR";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.groupBox2.Controls.Add(this.panel4);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.Createbtn);
+            this.groupBox2.Controls.Add(this.Loginbtnn);
+            this.groupBox2.Controls.Add(this.inkForgot);
+            this.groupBox2.Controls.Add(this.panel5);
+            this.groupBox2.Controls.Add(this.panel6);
+            this.groupBox2.Location = new System.Drawing.Point(12, 190);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(481, 539);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cbbRole);
+            this.panel4.Location = new System.Drawing.Point(6, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(469, 77);
+            this.panel4.TabIndex = 5;
+            // 
+            // cbbRole
+            // 
+            this.cbbRole.FormattingEnabled = true;
+            this.cbbRole.Location = new System.Drawing.Point(88, 26);
+            this.cbbRole.Name = "cbbRole";
+            this.cbbRole.Size = new System.Drawing.Size(306, 29);
+            this.cbbRole.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(226, 427);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 28);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "OR";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Createbtn
+            // 
+            this.Createbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(183)))), ((int)(((byte)(42)))));
+            this.Createbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Createbtn.ForeColor = System.Drawing.Color.White;
+            this.Createbtn.Location = new System.Drawing.Point(155, 470);
+            this.Createbtn.Name = "Createbtn";
+            this.Createbtn.Size = new System.Drawing.Size(178, 45);
+            this.Createbtn.TabIndex = 4;
+            this.Createbtn.Text = "Create new account";
+            this.Createbtn.UseVisualStyleBackColor = false;
+            this.Createbtn.Click += new System.EventHandler(this.Createbtn_Click);
+            // 
+            // Loginbtnn
+            // 
+            this.Loginbtnn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(172)))), ((int)(((byte)(230)))));
+            this.Loginbtnn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Loginbtnn.ForeColor = System.Drawing.Color.White;
+            this.Loginbtnn.Location = new System.Drawing.Point(98, 335);
+            this.Loginbtnn.Name = "Loginbtnn";
+            this.Loginbtnn.Size = new System.Drawing.Size(306, 72);
+            this.Loginbtnn.TabIndex = 3;
+            this.Loginbtnn.Text = "LOGIN";
+            this.Loginbtnn.UseVisualStyleBackColor = false;
+            this.Loginbtnn.Click += new System.EventHandler(this.Loginbtnn_Click);
+            // 
+            // inkForgot
+            // 
+            this.inkForgot.AutoSize = true;
+            this.inkForgot.Location = new System.Drawing.Point(94, 281);
+            this.inkForgot.Name = "inkForgot";
+            this.inkForgot.Size = new System.Drawing.Size(178, 23);
+            this.inkForgot.TabIndex = 2;
+            this.inkForgot.TabStop = true;
+            this.inkForgot.Text = "Forgotten password?";
+            this.inkForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.inkForgot_LinkClicked);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Showpassword);
+            this.panel5.Controls.Add(this.tbxPass);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Location = new System.Drawing.Point(6, 194);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(469, 77);
+            this.panel5.TabIndex = 1;
+            // 
+            // Showpassword
+            // 
+            this.Showpassword.BackColor = System.Drawing.SystemColors.Window;
+            this.Showpassword.Image = global::Phone_Store.Properties.Resources.eye_open;
+            this.Showpassword.Location = new System.Drawing.Point(412, 35);
+            this.Showpassword.Name = "Showpassword";
+            this.Showpassword.Size = new System.Drawing.Size(32, 30);
+            this.Showpassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Showpassword.TabIndex = 2;
+            this.Showpassword.TabStop = false;
+            this.Showpassword.Click += new System.EventHandler(this.Showpassword_Click);
+            // 
+            // tbxPass
+            // 
+            this.tbxPass.Location = new System.Drawing.Point(88, 35);
+            this.tbxPass.Multiline = true;
+            this.tbxPass.Name = "tbxPass";
+            this.tbxPass.PasswordChar = '*';
+            this.tbxPass.Size = new System.Drawing.Size(306, 34);
+            this.tbxPass.TabIndex = 1;
+            this.tbxPass.UseSystemPasswordChar = true;
+            this.tbxPass.Enter += new System.EventHandler(this.tbxPass_Enter);
+            this.tbxPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPass_KeyDown);
+            this.tbxPass.Leave += new System.EventHandler(this.tbxPass_Leave);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(88, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 23);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Password";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.txbUser);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Location = new System.Drawing.Point(6, 111);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(469, 77);
+            this.panel6.TabIndex = 0;
+            // 
+            // txbUser
+            // 
+            this.txbUser.Location = new System.Drawing.Point(88, 35);
+            this.txbUser.Multiline = true;
+            this.txbUser.Name = "txbUser";
+            this.txbUser.Size = new System.Drawing.Size(306, 34);
+            this.txbUser.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(88, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 23);
+            this.label9.TabIndex = 77;
+            this.label9.Text = "UserName ";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 836);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Showpassword)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -203,6 +414,23 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button loginbtn;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Createbtn;
+        private System.Windows.Forms.Button Loginbtnn;
+        private System.Windows.Forms.LinkLabel inkForgot;
+        private System.Windows.Forms.TextBox tbxPass;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txbUser;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox Showpassword;
+        private System.Windows.Forms.ComboBox cbbRole;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 
