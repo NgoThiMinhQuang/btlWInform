@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Phone_Store
 {
@@ -20,19 +21,27 @@ namespace Phone_Store
             connection.Close();
             return false;
         }
-        public bool checklogin(string user, string pass,string role)
+        public bool checklogin(string user, string pass, string role)
         {
-            SqlConnection connection = new SqlConnection(conn);
-            connection.Open();
-            string query = "select * from taikhoan where tendangnhap = '" + user + "' and matkhau = '" + pass + "'" + "and quyenhan = '" + role + "'";
-            SqlCommand command = new SqlCommand(query, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            using (SqlConnection connection = new SqlConnection(conn))
             {
-                connection.Close();
-                return true;
+                string query = "SELECT * FROM taikhoan WHERE tendangnhap = @user AND matkhau = @pass AND quyenhan = @role";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@user", user);
+                    command.Parameters.AddWithValue("@pass", pass);
+                    command.Parameters.AddWithValue("@role", role);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return true;
+                        }
+                    }
+                }
             }
-            connection.Close();
             return false;
         }
         public void adduser(string user, string pass, string role)
@@ -51,9 +60,6 @@ namespace Phone_Store
                 }
             }
         }
-
-
-
-
+       
     }
 }

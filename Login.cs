@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Phone_Store
 {
@@ -20,9 +21,10 @@ namespace Phone_Store
             cbbRole.Items.Add("Admin");
             cbbRole.SelectedIndex = 0;
 
-            txbPass.PasswordChar = '*';
+            tbxPass.PasswordChar = '\0';
             Showpassword.Visible = false;
-
+            Caplocks.Visible = false;
+            CheckCapsLock();
             txbUser.Focus();
 
         }
@@ -34,7 +36,10 @@ namespace Phone_Store
 
         private void tbxPass_Leave(object sender, EventArgs e)
         {
-            Showpassword.Visible = false;
+            if (!Showpassword.ClientRectangle.Contains(Showpassword.PointToClient(Control.MousePosition)))
+            {
+                Showpassword.Visible = false;
+            }
         }
 
         private void inkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -53,54 +58,36 @@ namespace Phone_Store
         private bool loginfail = false;
         private void Loginbtnn_Click(object sender, EventArgs e)
         {
-            if (txbUser.Text != "" && txbPass.Text != "")
-            {
-                if (data.checklogin(txbUser.Text, txbPass.Text, cbbRole.Text))
-                {
-                    loginfail = false;
-                    MessageBox.Show("Đăng nhập thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
-                else
-                {
-                    loginfail = true;
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbxPass.Focus();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txbUser.Focus();
-                return;
-            }
+           
         }
 
 
         private void tbxPass_KeyDown(object sender, KeyEventArgs e)
         {
-            if (loginfail && e.KeyCode == Keys.Back)
-            {
-                txbPass.Clear();
-                e.Handled = true; // Ngăn chặn xử lý mặc định của phím Backspace
-                loginfail = false; // Reset trạng thái
-            }
+            CheckCapsLock();
         }
-        private bool showpass = true;
+        private bool showpass = false;
         private void Showpassword_Click(object sender, EventArgs e)
         {
             showpass = !showpass;
-            if(showpass)
-            {
-                MessageBox.Show("Mật khẩu của bạn là: " + txbPass.Text, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txbPass.PasswordChar = '\0';
-            }
-            else
-            {
-                txbPass.UseSystemPasswordChar = true;
-                txbPass.PasswordChar = '*';
-            }
+            tbxPass.PasswordChar = showpass ? '\0' : '*';
             Showpassword.Image = showpass ? Properties.Resources.eye_open : Properties.Resources.eye_close;
         }
+        private void CheckCapsLock()
+        {
+            // Thêm debug để kiểm tra
+            bool isCapsLockOn = Control.IsKeyLocked(Keys.CapsLock);
+            Console.WriteLine($"Caps Lock is: {isCapsLockOn}");  // Debug line
+
+            Caplocks.Visible = isCapsLockOn;
+
+            // Đảm bảo PictureBox được hiển thị đúng
+            if (isCapsLockOn)
+            {
+                Caplocks.BringToFront();
+            }
+        }
+
+
     }
 }
