@@ -105,5 +105,8 @@
   <ItemGroup>
     <None Include="Resources\eye_close.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capslock_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace Phone_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap capslock_icon {
+            get {
+                object obj = ResourceManager.GetObject("capslock_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye_close {
             get {
                 object obj = ResourceManager.GetObject("eye_close", resourceCulture);

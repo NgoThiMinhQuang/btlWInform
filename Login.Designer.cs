@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -51,12 +52,14 @@
             this.Loginbtnn = new System.Windows.Forms.Button();
             this.inkForgot = new System.Windows.Forms.LinkLabel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Caplocks = new System.Windows.Forms.PictureBox();
             this.Showpassword = new System.Windows.Forms.PictureBox();
             this.tbxPass = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbUser = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,6 +67,7 @@
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Caplocks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Showpassword)).BeginInit();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -298,6 +302,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.Caplocks);
             this.panel5.Controls.Add(this.Showpassword);
             this.panel5.Controls.Add(this.tbxPass);
             this.panel5.Controls.Add(this.label8);
@@ -306,11 +311,22 @@
             this.panel5.Size = new System.Drawing.Size(469, 77);
             this.panel5.TabIndex = 1;
             // 
+            // Caplocks
+            // 
+            this.Caplocks.BackColor = System.Drawing.SystemColors.Window;
+            this.Caplocks.Image = global::Phone_Store.Properties.Resources.capslock_icon;
+            this.Caplocks.Location = new System.Drawing.Point(326, 35);
+            this.Caplocks.Name = "Caplocks";
+            this.Caplocks.Size = new System.Drawing.Size(32, 30);
+            this.Caplocks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Caplocks.TabIndex = 67;
+            this.Caplocks.TabStop = false;
+            // 
             // Showpassword
             // 
             this.Showpassword.BackColor = System.Drawing.SystemColors.Window;
             this.Showpassword.Image = global::Phone_Store.Properties.Resources.eye_open;
-            this.Showpassword.Location = new System.Drawing.Point(412, 35);
+            this.Showpassword.Location = new System.Drawing.Point(362, 35);
             this.Showpassword.Name = "Showpassword";
             this.Showpassword.Size = new System.Drawing.Size(32, 30);
             this.Showpassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -320,15 +336,14 @@
             // 
             // tbxPass
             // 
+            this.tbxPass.Font = new System.Drawing.Font("Times New Roman", 13.875F);
             this.tbxPass.Location = new System.Drawing.Point(88, 35);
             this.tbxPass.Multiline = true;
             this.tbxPass.Name = "tbxPass";
             this.tbxPass.PasswordChar = '*';
             this.tbxPass.Size = new System.Drawing.Size(306, 34);
             this.tbxPass.TabIndex = 1;
-            this.tbxPass.UseSystemPasswordChar = true;
             this.tbxPass.Enter += new System.EventHandler(this.tbxPass_Enter);
-            this.tbxPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPass_KeyDown);
             this.tbxPass.Leave += new System.EventHandler(this.tbxPass_Leave);
             // 
             // label8
@@ -351,6 +366,7 @@
             // 
             // txbUser
             // 
+            this.txbUser.Font = new System.Drawing.Font("Times New Roman", 13.875F);
             this.txbUser.Location = new System.Drawing.Point(88, 35);
             this.txbUser.Multiline = true;
             this.txbUser.Name = "txbUser";
@@ -377,9 +393,13 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "7";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -393,6 +413,7 @@
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Caplocks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Showpassword)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -431,6 +452,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox Caplocks;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
