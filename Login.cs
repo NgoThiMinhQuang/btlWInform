@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Phone_Store
@@ -43,7 +44,7 @@ namespace Phone_Store
             }
 
             toolTip1.SetToolTip(Showpassword, "Hiện mật khẩu");
-            toolTip1.SetToolTip(Caplocks, "Caps Lock đang bật");
+            toolTip1.SetToolTip(Caplocks, "CapsLock is on");
             tbxPass.PasswordChar = '\0';    // Mặc định hiển thị password
 
             Showpassword.Visible = false;   // Ẩn button show password khi khong o trong textbox

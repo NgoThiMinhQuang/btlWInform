@@ -16,5 +16,28 @@ namespace Phone_Store
         {
             InitializeComponent();
         }
+            Data data = new Data();
+
+        private void ResetPass_Load(object sender, EventArgs e)
+        {
+            
+            cbbUser.Items.Clear();
+
+
+            //tao list de chua user tu database
+            List<string> user = new List<string>();
+            data.Loaduser(user);  // Goi ham Loaduser tu class Data
+            user.Sort();
+            //sap xep user theo thu tu abc
+            foreach (string s in user)
+            {
+                cbbUser.Items.Add(s);
+            }
+            if (cbbUser.Items.Count > 0)
+            {
+                cbbUser.SelectedIndex = 0;
+            }
+
+        }
     }
 }

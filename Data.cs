@@ -88,6 +88,24 @@ namespace Phone_Store
             }
             return false;
         }
+        public void Loaduser(List<string> user)
+        {
+            using (SqlConnection connection = new SqlConnection(conn))
+            {
+                string query = "SELECT tendangnhap FROM taikhoan";  // Thay đổi câu query
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user.Add(reader.GetString(0));
+                        }
+                    }
+                }
+            }
+        }
         public bool adduser(string user, string pass, string role)
         {
             if (checkuser(user))
@@ -137,6 +155,53 @@ namespace Phone_Store
                 }
             }
         }
+        public string GenerateOTP(int length)
+        {
+            Random random = new Random();
+            string otp = "";
+
+            for (int i = 0; i < length; i++)
+            {
+                otp += random.Next(0, 10).ToString(); // Tạo một số ngẫu nhiên từ 0 đến 9
+            }
+
+            return otp;
+        }
+        public bool addOTP(string user, string otp)
+        {
+            using (SqlConnection connection = new SqlConnection(conn))
+            {
+                string query = "INSERT INTO otp (tendangnhap, otp) VALUES (@user, @otp)";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@user", user);
+                    command.Parameters.AddWithValue("@otp", otp);
+                    try
+                    {
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show("Database error: " + ex.Message,
+                                      "Error",
+                                      MessageBoxButtons.OK,
+                                      MessageBoxIcon.Error);
+                        return false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message,
+                                      "Error",
+                                      MessageBoxButtons.OK,
+                                      MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+            }
+        }
+
 
     }
 }

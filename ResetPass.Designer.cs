@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,9 +38,11 @@
             this.txbPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CbbUser = new System.Windows.Forms.ComboBox();
+            this.cbbUser = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -48,6 +51,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.panel2);
@@ -87,15 +91,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(183)))), ((int)(((byte)(42)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.Wheat;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(142, 294);
+            this.button1.Location = new System.Drawing.Point(297, 294);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 45);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Create new account";
+            this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // panel2
@@ -127,20 +131,20 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.CbbUser);
+            this.panel1.Controls.Add(this.cbbUser);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(6, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(469, 77);
             this.panel1.TabIndex = 0;
             // 
-            // CbbUser
+            // cbbUser
             // 
-            this.CbbUser.FormattingEnabled = true;
-            this.CbbUser.Location = new System.Drawing.Point(92, 35);
-            this.CbbUser.Name = "CbbUser";
-            this.CbbUser.Size = new System.Drawing.Size(302, 29);
-            this.CbbUser.TabIndex = 0;
+            this.cbbUser.FormattingEnabled = true;
+            this.cbbUser.Location = new System.Drawing.Point(92, 35);
+            this.cbbUser.Name = "cbbUser";
+            this.cbbUser.Size = new System.Drawing.Size(302, 29);
+            this.cbbUser.TabIndex = 0;
             // 
             // label2
             // 
@@ -164,6 +168,22 @@
             this.label1.Text = "Welcome";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(229, 294);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(62, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            // 
             // ResetPass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -178,6 +198,7 @@
             this.Name = "ResetPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResetPass";
+            this.Load += new System.EventHandler(this.ResetPass_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -199,9 +220,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CbbUser;
+        private System.Windows.Forms.ComboBox cbbUser;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
