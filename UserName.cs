@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace Phone_Store
 {
-    public partial class Login : Form
+    public partial class UserName : Form
     {
-        public Login()
+        public UserName()
         {
             InitializeComponent();
+
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void btnSanPham_Click(object sender, EventArgs e)
         {
 
         }
